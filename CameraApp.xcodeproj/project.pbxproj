@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65203FB61BE3B39200FB3465 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65203FB51BE3B39200FB3465 /* VideoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		65203FB81BE3B3AA00FB3465 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65203FB71BE3B3AA00FB3465 /* AVKit.framework */; };
+		65203FBB1BE3B9A100FB3465 /* AudioRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65203FBA1BE3B9A100FB3465 /* AudioRecordViewController.m */; settings = {ASSET_TAGS = (); }; };
 		65A3A7D01BE3AC2000B56DE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3A7CF1BE3AC2000B56DE0 /* main.m */; };
 		65A3A7D31BE3AC2000B56DE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3A7D21BE3AC2000B56DE0 /* AppDelegate.m */; };
 		65A3A7D61BE3AC2000B56DE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3A7D51BE3AC2000B56DE0 /* ViewController.m */; };
@@ -15,6 +18,7 @@
 		65A3A7DE1BE3AC2000B56DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A3A7DC1BE3AC2000B56DE0 /* LaunchScreen.storyboard */; };
 		65A3A7E91BE3AC2000B56DE0 /* CameraAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3A7E81BE3AC2000B56DE0 /* CameraAppTests.m */; };
 		65A3A7F41BE3AC2000B56DE0 /* CameraAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3A7F31BE3AC2000B56DE0 /* CameraAppUITests.m */; };
+		65A3A8021BE3AD3900B56DE0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A3A8011BE3AD3900B56DE0 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65203FB41BE3B39200FB3465 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		65203FB51BE3B39200FB3465 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		65203FB71BE3B3AA00FB3465 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		65203FB91BE3B9A100FB3465 /* AudioRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecordViewController.h; sourceTree = "<group>"; };
+		65203FBA1BE3B9A100FB3465 /* AudioRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecordViewController.m; sourceTree = "<group>"; };
 		65A3A7CB1BE3AC2000B56DE0 /* CameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3A7CF1BE3AC2000B56DE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65A3A7D11BE3AC2000B56DE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,7 @@
 		65A3A7EF1BE3AC2000B56DE0 /* CameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A3A7F31BE3AC2000B56DE0 /* CameraAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraAppUITests.m; sourceTree = "<group>"; };
 		65A3A7F51BE3AC2000B56DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A3A8011BE3AD3900B56DE0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65203FB81BE3B3AA00FB3465 /* AVKit.framework in Frameworks */,
+				65A3A8021BE3AD3900B56DE0 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,8 @@
 		65A3A7C21BE3AC2000B56DE0 = {
 			isa = PBXGroup;
 			children = (
+				65203FB71BE3B3AA00FB3465 /* AVKit.framework */,
+				65A3A8011BE3AD3900B56DE0 /* AVFoundation.framework */,
 				65A3A7CD1BE3AC2000B56DE0 /* CameraApp */,
 				65A3A7E71BE3AC2000B56DE0 /* CameraAppTests */,
 				65A3A7F21BE3AC2000B56DE0 /* CameraAppUITests */,
@@ -106,6 +120,10 @@
 				65A3A7D41BE3AC2000B56DE0 /* ViewController.h */,
 				65A3A7D51BE3AC2000B56DE0 /* ViewController.m */,
 				65A3A7D71BE3AC2000B56DE0 /* Main.storyboard */,
+				65203FB91BE3B9A100FB3465 /* AudioRecordViewController.h */,
+				65203FBA1BE3B9A100FB3465 /* AudioRecordViewController.m */,
+				65203FB41BE3B39200FB3465 /* VideoViewController.h */,
+				65203FB51BE3B39200FB3465 /* VideoViewController.m */,
 				65A3A7DA1BE3AC2000B56DE0 /* Assets.xcassets */,
 				65A3A7DC1BE3AC2000B56DE0 /* LaunchScreen.storyboard */,
 				65A3A7DF1BE3AC2000B56DE0 /* Info.plist */,
@@ -273,8 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65203FBB1BE3B9A100FB3465 /* AudioRecordViewController.m in Sources */,
 				65A3A7D61BE3AC2000B56DE0 /* ViewController.m in Sources */,
 				65A3A7D31BE3AC2000B56DE0 /* AppDelegate.m in Sources */,
+				65203FB61BE3B39200FB3465 /* VideoViewController.m in Sources */,
 				65A3A7D01BE3AC2000B56DE0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CameraApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tryTech.CameraApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tryTech.AvFoundationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -429,7 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CameraApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tryTech.CameraApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tryTech.AvFoundationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -501,6 +521,7 @@
 				65A3A7FA1BE3AC2000B56DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65A3A7FB1BE3AC2000B56DE0 /* Build configuration list for PBXNativeTarget "CameraAppTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +530,7 @@
 				65A3A7FD1BE3AC2000B56DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65A3A7FE1BE3AC2000B56DE0 /* Build configuration list for PBXNativeTarget "CameraAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +539,7 @@
 				65A3A8001BE3AC2000B56DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,25 +1,150 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GPG-45-FkY">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uUK-fe-9J0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="398"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shQ-MH-hLC">
+                                <rect key="frame" x="133" y="391" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="click_bt_camera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yN1-w1-MRM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0x-2s-oB5">
+                                <rect key="frame" x="95" y="436" width="130" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Open Photo Galary"/>
+                                <connections>
+                                    <action selector="click_bt_OpenPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVm-BQ-H3v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uUK-fe-9J0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6K0-At-FSf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uUK-fe-9J0" secondAttribute="bottom" constant="170" id="Iit-le-YPJ"/>
+                            <constraint firstItem="h0x-2s-oB5" firstAttribute="centerX" secondItem="shQ-MH-hLC" secondAttribute="centerX" id="Muf-3x-IRi"/>
+                            <constraint firstAttribute="trailing" secondItem="uUK-fe-9J0" secondAttribute="trailing" id="St4-UV-mKA"/>
+                            <constraint firstItem="uUK-fe-9J0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UZ9-e1-Tc2"/>
+                            <constraint firstItem="h0x-2s-oB5" firstAttribute="top" secondItem="shQ-MH-hLC" secondAttribute="bottom" constant="15" id="ZFf-iY-c1U"/>
+                            <constraint firstItem="shQ-MH-hLC" firstAttribute="top" secondItem="uUK-fe-9J0" secondAttribute="bottom" constant="-7" id="reu-5G-Gg7"/>
+                            <constraint firstItem="shQ-MH-hLC" firstAttribute="centerX" secondItem="uUK-fe-9J0" secondAttribute="centerX" id="sd7-5M-EOw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView_1" destination="uUK-fe-9J0" id="dz1-n9-R7r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="51" y="346"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="K1Z-5Y-jLm">
+            <objects>
+                <viewController id="Lkw-lo-JOs" customClass="VideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hry-EM-zf5"/>
+                        <viewControllerLayoutGuide type="bottom" id="8QF-FA-3vq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CYG-M7-JMl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="add" id="8ar-PG-l7D">
+                            <connections>
+                                <action selector="startVideo:" destination="Lkw-lo-JOs" id="GIf-MC-T00"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="play" id="SZc-3c-pzq">
+                            <connections>
+                                <action selector="playVideo:" destination="Lkw-lo-JOs" id="0e0-Ju-rcZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faD-mV-DUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="332"/>
+        </scene>
+        <!--Audio Record View Controller-->
+        <scene sceneID="vVV-5L-p6a">
+            <objects>
+                <viewController id="GPG-45-FkY" customClass="AudioRecordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kz6-ZM-TVg"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8i-pO-W2X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gTu-zw-BUT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5zY-pu-6Ea">
+                                <rect key="frame" x="20" y="46" width="104" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bB7-0u-5Jb">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Start recording"/>
+                                        <connections>
+                                            <action selector="start:" destination="GPG-45-FkY" eventType="touchUpInside" id="GKP-dX-05o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huy-iB-0RK">
+                                        <rect key="frame" x="0.0" y="30" width="104" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="stop recording"/>
+                                        <connections>
+                                            <action selector="stop:" destination="GPG-45-FkY" eventType="touchUpInside" id="KJC-oE-BZc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqm-2W-qQI">
+                                        <rect key="frame" x="0.0" y="60" width="104" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="play "/>
+                                        <connections>
+                                            <action selector="play:" destination="GPG-45-FkY" eventType="touchUpInside" id="gQ0-Hq-7pA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5zY-pu-6Ea" firstAttribute="top" secondItem="Kz6-ZM-TVg" secondAttribute="bottom" constant="26" id="H9p-SO-giZ"/>
+                            <constraint firstItem="5zY-pu-6Ea" firstAttribute="leading" secondItem="gTu-zw-BUT" secondAttribute="leadingMargin" constant="4" id="onB-yq-Xlc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EH1-Gu-k4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515" y="268"/>
         </scene>
     </scenes>
 </document>
